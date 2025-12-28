@@ -1,0 +1,15 @@
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+  application:
+    name: order-processing-service
+server:
+  port: 8084
+  servlet:
+    context-path: /api
+camel:
+  component:
+    activemq:
+      broker-url: tcp://localhost:61616
